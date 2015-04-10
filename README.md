@@ -23,11 +23,13 @@ Search the css and js files located in fc-select-list folder.
 Basic Usage:
 ===================
 To trigger invoke the function to the selector
+```
 $('#first').fc_select_list();
-
+```
 
 Basic Usage Code Example:
 =========================
+```
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js" /></script>
 <link href="fc-select-list/fc-select-list.css" rel="stylesheet" type="text/css">
 <script src="fc-select-list/fc-select-list.js" type="text/javascript"></script>
@@ -36,6 +38,6 @@ Basic Usage Code Example:
     $('#first').fc_select_list();
   });
 </script>
+```
 
 
- 
