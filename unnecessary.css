@@ -1,0 +1,21 @@
+
+body {font-family: arial}
+.unnecessary-wrapper {width: 35%; background: #FDBA30; margin: 20px auto; padding: 20px}
+.field {margin-bottom: 20px;}
+label {display: block}
+
+/* For modern browsers */
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix {
+    zoom:1;
+}
+
+h4 {margin: 0}

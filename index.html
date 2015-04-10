@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>FrontCrush - Select to List</title>
+<link href="unnecessary.css" rel="stylesheet" type="text/css">
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js" /></script>
+
+<!-- SELECT TO LIST FILES -->
+<link href="fc-select-list/fc-select-list.css" rel="stylesheet" type="text/css">
+<script src="fc-select-list/fc-select-list.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    //$('#first').fc_select_list({jQuery_animation: true});
+
+    $('#first').fc_select_list();
+    $('#second').fc_select_list({click: true, hover: false});
+    $('#third').fc_select_list({click: true, jQuery_animation: true});
+    $('#fourth').fc_select_list({jQuery_animation: true});
+    $('#fifth').fc_select_list({firstOptionText: 'First option contains custom text.'});
+
+  });
+</script>
+
+</head>
+
+<body>
+
+
+  <div class="unnecessary-wrapper clearfix">
+        <h2 class="block-title">FrontCrush - Select to List</h2>
+    
+  <div class="block-content"><p>Functioning examples.</p>
+  <form>
+    <div class="field">
+      <h4>Normal select list.</h4>
+      <label>This is the label</label>
+      <select class="colors">
+        <option>All colors</option>
+        <option>Red</option>
+        <option>Orange</option>
+        <option>Yellow</option>
+        <option>Green</option>
+        <option>Blue</option>
+        <option>Indigo</option>
+        <option>Violet</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <h4>Basic, no jQuery transition</h4>
+      <label>This is the label</label>
+      <select id="first" class="colors">
+        <option>All colors</option>
+        <option>Red</option>
+        <option>Orange</option>
+        <option>Yellow</option>
+        <option>Green</option>
+        <option>Blue</option>
+        <option>Indigo</option>
+        <option>Violet</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <h4>Click to open/close.</h4>
+      <label>This is the label</label>
+      <select id="second" class="colors">
+        <option>All colors</option>
+        <option>Red</option>
+        <option>Orange</option>
+        <option>Yellow</option>
+        <option>Green</option>
+        <option>Blue</option>
+        <option>Indigo</option>
+        <option>Violet</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <h4>Combines Hover and click for opening and for closing.</h4>
+      <label>This is the label</label>
+      <select id="third" class="colors">
+        <option>All colors</option>
+        <option>Red</option>
+        <option>Orange</option>
+        <option>Yellow</option>
+        <option>Green</option>
+        <option>Blue</option>
+        <option>Indigo</option>
+        <option>Violet</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <h4></h4>
+      <label>Select list with fc_select_list applied.</label>
+      <select id="fourth" class="colors">
+        <option>All colors</option>
+        <option>Red</option>
+        <option>Orange</option>
+        <option>Yellow</option>
+        <option>Green</option>
+        <option>Blue</option>
+        <option>Indigo</option>
+        <option>Violet</option>
+      </select>
+    </div>
+
+
+    <div class="field">
+      <h4>Overwrites the text of the first option</h4>
+      <label>This is the label</label>
+      <select id="fifth" class="colors">
+        <option>All colors colors</option>
+        <option>Red</option>
+        <option>Orange</option>
+        <option>Yellow</option>
+        <option>Green</option>
+        <option>Blue</option>
+        <option>Indigo</option>
+        <option>Violet</option>
+      </select>
+    </div>
+  </form>
+
+</body>
+</html>
